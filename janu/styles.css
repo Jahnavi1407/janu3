@@ -1,0 +1,296 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e5e8e8 ;
+    color: #333;
+}
+
+header {
+    background-color: #DB7093;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+header nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0c0c0c;
+}
+
+header nav ul {
+    list-style: none;
+    display: inline-flex;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin: 5px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #0c0c0c;
+    font-size: 16px;
+}
+
+/* Hero section */
+.hero {
+    background: url('https://img.freepik.com/premium-photo/beautiful-floral-background-with-variety-colorful-flowers-perfect-use-as-wallpaper-creating-greeting-cards-other-paper-crafts_14117-220794.jpg') no-repeat center center/cover;
+    height: 280px;
+    color: rgb(29, 27, 27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Products section */
+#products {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.filter-options {
+    margin-bottom: 20px;
+}
+
+.filter-options select {
+    padding: 8px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Product Item Styling */
+.product-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column; /* Aligns children vertically */
+    height: 600px; /* Give a fixed height to the product item */
+}
+
+/* Hover effect for product item */
+.product-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Product Image Styling */
+.product-item img {
+    width: 100%;
+    height: auto;
+    flex-grow: 1; /* Ensures the image takes up available space */
+}
+
+/* Add to Cart button styling */
+.product-item .add-to-cart-btn {
+    background-color: #68b5b8; /* Button color */
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Full width of the product card */
+    position: relative;
+    bottom: 0;
+}
+
+.product-item .add-to-cart-btn:hover {
+    background-color: #5F9EA0; /* Darker shade on hover */
+}
+
+/* Product Name, Category and Price */
+.product-item h3 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+.product-item .price {
+    font-size: 18px;
+    color: #ff6f61;
+    font-weight: bold;
+}
+/* Rating Styling */
+.rating {
+    font-size: 24px;
+    color: #ff6f61;
+    margin-top: 10px;
+}
+
+.star {
+    margin: 0 5px;
+}
+
+/* Filled star */
+.star.filled {
+    color: #ff6f61;
+}
+
+/* Empty star */
+.star.empty {
+    color: #ccc;
+}
+
+/* Styling for color options */
+.color-options {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.color-option:hover {
+    transform: scale(1.2);
+}
+
+/* Cart section */
+#cart {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.cart-item h3 {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.cart-item .remove-btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-total {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#clear-cart-btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Contact section */
+#contact {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact input, #contact textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-options select {
+        width: 100%;
+    }
+}

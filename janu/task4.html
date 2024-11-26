@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE FLOWER GARDEN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">THE FLOWER GARDEN</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Beautiful Bouquets for Every Occasion</h1>
+            <p>Explore our wide range of stunning bouquets, handpicked just for you!</p>
+        </div>
+    </section>
+    
+    <section id="products">
+        <h2>Our Bouquets</h2>
+        <div class="filter-options">
+            <select id="category-filter">
+                <option value="">Select Category</option>
+                <option value="wedding">Wedding</option>
+                <option value="birthday">Birthday</option>
+                <option value="anniversary">Anniversary</option>
+                <option value="friend">Friend</option>
+                <option value="love">Love</option>
+            </select>
+            <select id="price-filter">
+                <option value="">Select Price</option>
+                <option value="low">Low to High</option>
+                <option value="high">High to Low</option>
+            </select>
+        </div>
+        <div class="product-list" id="product-list">
+            <!-- Product items will be injected here dynamically -->
+        </div>
+    </section>
+    
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be displayed here dynamically -->
+        </div>
+        <div class="cart-total">
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="clear-cart-btn">Clearcart</button>
+        </div>
+    </section>
+   
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+            <p>At The Flower Garden, we believe that flowers have the power to convey emotions, create lasting memories, and brighten every occasion. With a passion for fresh, handpicked blooms, we offer a beautiful range of bouquets crafted to suit weddings, birthdays, anniversaries, and more. Our expert florists combine creativity and care to create stunning arrangements that bring joy to every recipient.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Flower Bouquet Shop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
